@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 11, 2015 5:51:03 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.learnlogic.system.rental.model.SellerInfo" table="seller_info" catalog="charter">
+        <id name="sellerId" type="long">
+            <column name="seller_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="sellerType" type="string">
+            <column name="seller_type" length="45" />
+        </property>
+        <property name="sellerEmail" type="string">
+            <column name="seller_email" length="45" />
+        </property>
+        <property name="sellerPhone" type="string">
+            <column name="seller_phone" length="45" />
+        </property>
+        <property name="sellerReview" type="string">
+            <column name="seller_review" length="250" />
+        </property>
+        <property name="sellerFeedback" type="string">
+            <column name="seller_feedback" length="250" />
+        </property>
+        <property name="sellerProductId" type="java.lang.Long">
+            <column name="seller_product_id" />
+        </property>
+        <property name="sellerLocation" type="string">
+            <column name="seller_location" length="45" />
+        </property>
+        <property name="sellerAddress" type="string">
+            <column name="seller_address" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

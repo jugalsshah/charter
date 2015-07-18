@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 11, 2015 5:51:03 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.learnlogic.system.rental.model.CustomerInfo" table="customer_info" catalog="charter">
+        <id name="customerId" type="long">
+            <column name="customer_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="customerFname" type="string">
+            <column name="customer_fname" length="45" />
+        </property>
+        <property name="customerEmail" type="string">
+            <column name="customer_email" length="45" />
+        </property>
+        <property name="customerLocation" type="string">
+            <column name="customer_location" length="45" />
+        </property>
+        <property name="customerImage" type="string">
+            <column name="customer_image" length="45" />
+        </property>
+        <property name="customerAge" type="string">
+            <column name="customer_age" length="45" />
+        </property>
+        <property name="customerPhone" type="string">
+            <column name="customer_phone" length="45" />
+        </property>
+        <property name="customerLname" type="string">
+            <column name="customer_lname" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

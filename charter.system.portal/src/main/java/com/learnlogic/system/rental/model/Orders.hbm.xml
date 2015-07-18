@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 11, 2015 5:51:03 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.learnlogic.system.rental.model.Orders" table="orders" catalog="charter">
+        <id name="orderId" type="long">
+            <column name="Order_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="customerId" type="long">
+            <column name="customer_id" not-null="true" />
+        </property>
+        <property name="ordernumber" type="long">
+            <column name="Ordernumber" not-null="true" />
+        </property>
+        <property name="paymentId" type="long">
+            <column name="Payment_id" not-null="true" />
+        </property>
+        <property name="orderDate" type="timestamp">
+            <column name="Order_date" length="19" />
+        </property>
+        <property name="shipDate" type="timestamp">
+            <column name="Ship_date" length="19" />
+        </property>
+        <property name="shipId" type="java.lang.Long">
+            <column name="Ship_Id" />
+        </property>
+        <property name="orderAmount" type="string">
+            <column name="Order_amount" length="45" />
+        </property>
+        <property name="orderTrackingnumber" type="string">
+            <column name="Order_trackingnumber" length="45" />
+        </property>
+        <property name="orderTax" type="java.lang.Long">
+            <column name="Order_Tax" />
+        </property>
+        <property name="orderShipaddress1" type="string">
+            <column name="Order_Shipaddress1" length="45" />
+        </property>
+        <property name="orderShipaddress2" type="string">
+            <column name="Order_shipaddress2" length="45" />
+        </property>
+        <property name="orderCity" type="string">
+            <column name="Order_city" length="45" />
+        </property>
+        <property name="orderState" type="string">
+            <column name="Order_state" length="45" />
+        </property>
+        <property name="orderZip" type="string">
+            <column name="Order_Zip" length="45" />
+        </property>
+        <property name="orderPaymentDate" type="timestamp">
+            <column name="Order_payment_Date" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

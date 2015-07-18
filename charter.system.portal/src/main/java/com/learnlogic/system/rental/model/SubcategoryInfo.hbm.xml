@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 11, 2015 5:51:03 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.learnlogic.system.rental.model.SubcategoryInfo" table="subcategory_info" catalog="charter">
+        <id name="subcategoryId" type="long">
+            <column name="subcategory_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="categoryId" type="java.lang.Long">
+            <column name="category_id" />
+        </property>
+        <property name="sellerId" type="java.lang.Long">
+            <column name="seller_id" />
+        </property>
+        <property name="subcategoryName" type="string">
+            <column name="subcategory_name" length="45" />
+        </property>
+        <property name="subcategoryDesc" type="string">
+            <column name="subcategory_desc" length="450" />
+        </property>
+        <property name="subcategoryImage" type="string">
+            <column name="subcategory_image" length="45" />
+        </property>
+        <property name="subcategoryItemPrice" type="java.lang.Integer">
+            <column name="subcategory_item_price" />
+        </property>
+    </class>
+</hibernate-mapping>

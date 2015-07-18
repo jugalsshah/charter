@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 11, 2015 5:51:03 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.learnlogic.system.rental.model.Payment" table="payment" catalog="charter">
+        <id name="paymentId" type="long">
+            <column name="paymentId" />
+            <generator class="assigned" />
+        </id>
+        <property name="paymentType" type="string">
+            <column name="payment_type" length="45" />
+        </property>
+        <property name="allowed" type="string">
+            <column name="allowed" length="11" />
+        </property>
+        <property name="customerId" type="java.lang.Long">
+            <column name="customer_id" />
+        </property>
+    </class>
+</hibernate-mapping>
